@@ -60,7 +60,7 @@ wait_on_run $run
 
 # copy reports to a new directory
 set now [clock format [clock seconds] -format %Y.%m.%d-%T]
-set new_rpt_dir $rpt_dir/$project_name-$run-$now
+set new_rpt_dir $rpt_dir/$now-$project_name-$run
 file mkdir $new_rpt_dir
 file copy $project_dir/$project_name.runs/$run/$project_name.vds $new_rpt_dir/synth.log
 file copy $project_dir/$project_name.runs/$run/${project_name}_utilization_synth.rpt $new_rpt_dir/utilization.rpt
