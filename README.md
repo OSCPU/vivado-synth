@@ -8,3 +8,6 @@ Usage:
 1. Modify the clock port name and clock frequency in `constr/constr.xdc`
 1. Run `make`
 1. Get reports under `report/`
+
+Note: if the file list is updated, you should clean the old project
+by `make clean` first to make it take effect.
